@@ -28,14 +28,6 @@ Initialise the plugin:
 	$(document).ready(function(){
     	$('body').find('.plus').googlePlus('init');
     });
- 
-    // Link the button callbacks to jQuery.googlePlus.js (optional) 
-    function button_callback(p){
-		if(p.state=="on")
-	    	$('body').googlePlus('on')
-	  	else $('body').googlePlus('off')
-	    	return true
-	}
 
 ## Contact
 

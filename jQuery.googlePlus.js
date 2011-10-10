@@ -101,3 +101,11 @@
     return m[mode].apply( this, Array.prototype.slice.call(arguments,1));
   };
 })(jQuery);
+
+// Link the button callbacks to jQuery.googlePlus.js (optional) 
+function button_callback(p){
+    if(p.state=="on")
+        $('body').googlePlus('on')
+    else $('body').googlePlus('off')
+        return true
+}
