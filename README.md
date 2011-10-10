@@ -1,6 +1,6 @@
-# About jQuery.googlePlus.js
+# About jQuery.googlePlusOne.js
 
-jQuery.googlePlus.js is a simple plugin for quickly adding Google +1 buttons to a page. Unlike the standard Google+ button, this plugin will not contact Google for any assets (images / javascript) until the user hovers over the button intently expressing an interest. 
+jQuery.googlePlusOne.js is a simple plugin for quickly adding Google +1 buttons to a page. Unlike the standard Google +1 button, this plugin will not contact Google for any assets (images / javascript) until the user hovers over the button intently expressing an interest. 
 
 ###Why bother?
 
@@ -10,7 +10,7 @@ jQuery.googlePlus.js is a simple plugin for quickly adding Google +1 buttons to 
 
 ## Example
 
-A working text blog can be viewed [here](http://laurencedawson.github.com/jQuery.googlePlus.js/), the source can be viewed in /demo.
+A working text blog can be viewed [here](http://laurencedawson.github.com/jQuery.googlePlusOne.js/), the source can be viewed in /demo.
 
 ## Usage
 
@@ -18,15 +18,15 @@ Add the html to your page (where google.co.uk could be any link):
 
 	<div class="plus" link="http://www.google.co.uk/"></div>
 
-Include jQuery.googlePlus.js
+Include jQuery.googlePlusOne.js
 
-	<script type="text/javascript" src="jQuery.googlePlus.min.js"></script>
+	<script type="text/javascript" src="jQuery.googlePlusOne.min.js"></script>
 
 Initialise the plugin:
 
     // Link the div class plus to the plugin
 	$(document).ready(function(){
-    	$('body').find('.plus').googlePlus('init');
+    	$('body').find('.plus').googlePlusOne('init');
     });
 
 ## Contact
