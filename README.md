@@ -4,6 +4,7 @@ jQuery.googlePlus.js is a simple plugin for quickly adding animated Google +1 bu
 
 ###Why bother?
 
+- Privacy! A user has to opt in (via hover) to enable the button
 - The minified plugin is small (~2kb) and contains the default assets encoded in base64 to reduce http requests. This means that when a user visits a page with multiple +1 buttons on, all buttons will load immedieaty and removes the noticable lag / flicker of assets being loaded that is currently seen with the code from Google.
 - The button is animated (the same animation can be seen on any Google search page and currently not available)
 
