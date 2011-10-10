@@ -1,11 +1,12 @@
 # About jQuery.googlePlusOne.js
 
-jQuery.googlePlusOne.js is a simple plugin for quickly adding Google +1 buttons to a page. Unlike the standard Google +1 button, this plugin will not contact Google for any assets (images / javascript) until the user hovers over the button intently expressing an interest. 
+jQuery.googlePlusOne.js is a simple plugin for quickly adding animated Google +1 buttons to a page. Unlike the standard Google+ button, this plugin will not contact Google for any assets (images / javascript) until the user hovers over the button intently expressing an interest. 
 
 ###Why bother?
 
+- Privacy! A user has to opt in (via hover) to enable the button
 - The minified plugin is small (~2kb) and contains the default assets encoded in base64 to reduce http requests. This means that when a user visits a page with multiple +1 buttons on, all buttons will load immedieaty and removes the noticable lag / flicker of assets being loaded that is currently seen with the code from Google.
-- The button is animated (the same animation can be seen on any Google search page)
+- The button is animated (the same animation can be seen on any Google search page and currently not available)
 
 
 ## Example
