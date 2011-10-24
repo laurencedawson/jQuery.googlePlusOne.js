@@ -10,11 +10,12 @@
     header{ padding:10px; padding-top:10px }
     footer{ color:#000; text-align:center; font-size:10px; margin-top:10px; line-height:1.5 }
     footer a{text-decoration:none}
-    .row{ margin:0; padding:0; margin-bottom:20px; font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:left }
-    .last{ margin-bottom:0 }
-    .plus{ float:right }
+    .plus-row{ margin:0; padding:0; padding:20px; font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; text-align:left; border-top:solid 1px #ddd; border-left: solid 1px #fff }
+    .plus-row:hover{ border-left: solid 1px #4d90f0 }
+    .first{ border-top:solid 0px #ddd }
+    .plus-button{ float:right }
     .logo{ float:left; padding-top:2px; width:16px; margin-right:10px }
-    .list{ background-color:#fff; padding:30px; border-radius: 5px; border:solid 1px #ccc }
+    .list{ background-color:#fff;  border:solid 1px #ccc /*border-radius: 5px;*/}
   </style>
 </head>
 
@@ -22,28 +23,28 @@
 <body>
   <header><h1>jquery.googlePlusOne</h1></header>
   <div class="list">
-    <div class="row"><img class="logo" src="http://www.google.com/favicon.ico"/><a href="http://www.google.com">Google</a><div class="plus" link="http://www.google.co.uk/"></div></div>
-    <div class="row"><img class="logo" src="http://www.youtube.com/favicon.ico"/><a href="http://www.youtube.com">YouTube</a><div class="plus" link="http://www.youtube.com/"></div></div>
-    <div class="row"><img class="logo" src="http://www.yahoo.com/favicon.ico"/><a href="http://www.yahoo.com">Yahoo!</a><div class="plus" link="http://www.yahoo.com/"></div></div>
-    <div class="row"><img class="logo" src="http://www.wikipedia.org/favicon.ico"/><a href="http://www.wikipedia.org">Wikipedia</a><div class="plus" link="http://www.wikipedia.org/"></div></div>
-    <div class="row"><img class="logo" src="http://www.blogger.com/favicon.ico"/><a href="http://www.blogger.com">Blogger.com</a><div class="plus" link="http://www.blogger.com"></div></div>
-    <div class="row"><img class="logo" src="http://www.live.com/favicon.ico"/><a href="http://www.live.com">Windows Live</a><div class="plus" link="http://www.live.com"></div></div>
-    <div class="row"><img class="logo" src="http://www.twitter.com/favicon.ico"/><a href="http://www.twitter.com">Twitter</a><div class="plus" link="http://www.twitter.com"></div></div>
-    <div class="row"><img class="logo" src="http://www.linkedin.com/favicon.ico"/><a href="http://www.linkedin.com">LinkedIn</a><div class="plus" link="http://www.linkedin.com"></div></div>
-    <div class="row last"><img class="logo" src="http://www.msn.com/favicon.ico"/><a href="http://www.msn.com">MSN</a><div class="plus" link="http://www.msn.com/"></div></div>
+    <div class="plus-row first">Google<div class="plus-button" link="http://www.google.co.uk/"></div></div>
+    <div class="plus-row">YouTube<div class="plus-button" link="http://www.youtube.com/"></div></div>
+    <div class="plus-row">Yahoo!<div class="plus-button" link="http://www.yahoo.co.uk/"></div></div>
+    <div class="plus-row">Wikipedia<div class="plus-button" link="http://www.wikipedia.org/"></div></div>
+    <div class="plus-row">Blogger.com<div class="plus-button" link="http://www.blogger.com/"></div></div>
+    <div class="plus-row">Windows Live<div class="plus-button" link="http://www.live.com/"></div></div>
+    <div class="plus-row">Twitter<div class="plus-button" link="http://www.twitter.com/"></div></div>
+    <div class="plus-row">LinkedIn<div class="plus-button" link="http://www.linkedin.com/"></div></div>
+    <div class="plus-row">MSN<div class="plus-button" link="http://www.msn.com/"></div></div>
   </div>
   <footer><a href="https://github.com/laurencedawson">Laurence Dawson</a></footer>
 
   <!-- Load jQuery and jquery.google-plus-plus -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script type="text/javascript" src="http://laurencedawson.github.com/jQuery.googlePlusOne.js/jQuery.googlePlusOne.min.js"></script>
+  <script type="text/javascript" src="jQuery.googlePlusOne.min.js"></script>
   
   <!-- Example plugin setup -->
   <script type="text/javascript" language="javascript"> 
 
     //Setup the plugin
     $(document).ready(function(){
-	  $('body').find('.plus').googlePlusOne('init');
+	  $('body').find('.plus-row').googlePlusOne('init');
 	});
 
   </script>
