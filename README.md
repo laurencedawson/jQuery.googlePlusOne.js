@@ -33,6 +33,9 @@ Initialise the plugin:
     	$('body').find('.plus').googlePlusOne('init');
     });
 
+###Note
+jQuery.googlePlusOne.js currently does not support running locally without a web server. You must either deploy to a live site or local apache instance.s
+
 ## Contact
 
 Laurence Dawson: [email](mailto:contact@laurencedawson.com), [twitter](http://twitter.com/#!/loljdawson)
