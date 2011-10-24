@@ -1,12 +1,12 @@
 # About jQuery.googlePlusOne.js
 
-jQuery.googlePlusOne.js is a simple plugin for quickly adding animated Google +1 buttons to a page. Unlike the standard Google+ button, this plugin will not contact Google for any assets (images / javascript) until the user hovers over the button intently expressing an interest. 
+jQuery.googlePlusOne.js is a simple plugin for quickly adding animated Google +1 buttons to a page. Unlike the standard Google+ button the button activates an animation when the user hovers over the plus-row div (as can be seen on any Google search page).
 
 ###Why bother?
 
-- Privacy! A user has to opt in (via hover) to enable the button
-- The minified plugin is small (~2kb) and contains the default assets encoded in base64 to reduce http requests. This means that when a user visits a page with multiple +1 buttons on, all buttons will load immedieaty and removes the noticable lag / flicker of assets being loaded that is currently seen with the code from Google.
+- The minified plugin is small (~1.3kb) and contains the default assets encoded in base64 to reduce http requests. This means that when a user visits a page with multiple +1 buttons on, all buttons will load immedieaty and removes the noticable lag / flicker of assets being loaded that is currently seen with the code from Google.
 - The button is animated (the same animation can be seen on any Google search page and currently not available)
+- The surrounding div (plus-row) will trigger the animation (again like on any Google search page)
 
 
 ## Example
@@ -17,7 +17,10 @@ A working text blog can be viewed [here](http://laurencedawson.github.com/jQuery
 
 Add the html to your page (where google.co.uk could be any link):
 
-	<div class="plus" link="http://www.google.co.uk/"></div>
+    <div class="plus-row">
+        Google
+        <div class="plus-button" link="http://www.google.co.uk/"></div>
+    </div>
 
 Include jQuery.googlePlusOne.js
 
